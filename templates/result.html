@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Result</title>
+    <style>
+      /* Body background color */
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+
+      /* Center the content */
+      .container {
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style the heading */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Style the result text */
+      p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your BMI Result</h1>
+      <p>Your BMI is {{ bmi|round(2) }}</p>
+      <p>{{ result }}</p>
+    </div>
+  </body>
+</html>
